@@ -20,7 +20,9 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('blog.index') -> with('posts', Post::orderBy('updated_at','DESC')->get());
+        $post = Post::paginate(2);
+        //return view('blog.index') -> with('posts', Post::orderBy('updated_at','DESC')->get());
+        return view('blog.index',['posts'=>$post]);
     }
 
     /**
@@ -43,6 +45,7 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'summary'=> 'required',
             'description' => 'required',
             'image' => 'required|mimes: jpg,png,jpeg|max:5048'
         ]);
@@ -53,6 +56,7 @@ class PostsController extends Controller
 
         Post::create([
             'title' => $request->input('title'),
+            'summary' => $request->input('summary'),
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'image_path' => $newImageName,
@@ -97,11 +101,13 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'summary' => 'required',
             'description' => 'required',
         ]);
         Post::where('slug',$slug)
         ->update([
             'title' => $request->input('title'),
+            'summary'=> $request->input('summary'),
             'description' => $request->input('description'),
             'slug' => SlugService::createSlug(Post::class, 'slug', $request->title),
             'user_id' => auth()->user()->id

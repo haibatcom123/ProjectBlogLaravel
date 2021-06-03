@@ -37,7 +37,7 @@
             ,Created on {{date('jS M Y',strtotime($post->updated_at))}}
         </span>
         <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
-            {{$post -> description}}
+        {{$post -> summary}}
         </p>
         <a href="/blog/{{$post->slug}}" class="uppercase bg-blue-500 text-gray-100 text-lg font-extrabold py-4 px-8 rounded-3xl">
         Reading More</a>
@@ -58,9 +58,12 @@
             </span>
         @endif
     </div>
-
 </div>
+    
 
 @endforeach
-
+    <span>
+    {{$posts->links()}}
+    </span>
 @endsection
+

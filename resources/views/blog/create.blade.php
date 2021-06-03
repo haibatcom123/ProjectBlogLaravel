@@ -25,7 +25,8 @@
     <form action="/blog" method="POST" enctype="multipart/form-data" >
     @csrf
 
-    <input type="text" name="title" placeholder="Title..." class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
+    <input type="text" name="title" placeholder="Title" class="bg-transparent block border-b-2 w-full h-20 text-6xl outline-none">
+    <textarea name="summary" placeholder="Summary" class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
     <textarea name="description" placeholder="Description" class="py-20 bg-transparent block border-b-2 w-full h-60 text-xl outline-none"></textarea>
 
     <div class="bg-grey-lighter pt-15">

@@ -17,6 +17,7 @@ class Posts extends Migration
             $table->increments('id');
             $table->string('slug');
             $table->string('title');
+            $table->text('summary');
             $table->longText('description');
             $table->string('image_path');
             $table->timestamps(); 
@@ -24,6 +25,8 @@ class Posts extends Migration
             $table->foreign('user_id')->references('id')->on('user');
             
         });
+
+        
     }
 
     /**
@@ -33,6 +36,6 @@ class Posts extends Migration
      */
     public function down()
     {
-        //
+        
     }
 }
