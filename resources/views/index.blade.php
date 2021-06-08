@@ -18,6 +18,7 @@
             <div class = "m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class ="sm text-yellow-100 text-5xl uppercase font-bold
                 text-shadow-md pb-14">
+                Do you want to discovery everything?
                 {{__('language.tittle')}}
                 </h1>
                 <!-- <a href="/blog"

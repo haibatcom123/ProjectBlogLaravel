@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\CommentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,6 +24,5 @@ Route::get('/',[PagesController::class, 'index']);
 Route::resource('/blog',PostsController::class);
 Route::get('/blog', [PostsController::class, 'index'])->name('posts');
 Auth::routes();
-
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('language/{locale}', 'LanguageController@index') -> name('language');
