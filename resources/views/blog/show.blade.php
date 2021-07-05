@@ -23,6 +23,22 @@
     <p class="text-xl text-gray-700 pt-8 pb-10 leading-8 font-light">
             {{$posts -> description}}
     </p>
+    <h4>Display Comments</h4>
+  
+  @include('blog.commentsDisplay', ['comments' => $posts->comments, 'post_id' => $posts->id])
+
+  <hr />
+  <h4>Add comment</h4>
+  <form method="post" action="{{ route('comments.store') }}">
+      @csrf
+      <div class="form-group">
+          <textarea class="form-control" name=body></textarea>
+          <input type=hidden name=post_id value="{{ $post->id }}" />
+      </div>
+      <div class="form-group">
+          <input type=submit class="btn btn-success" value="Add Comment" />
+      </div>
+  </form>
 </div>
 
 @endsection

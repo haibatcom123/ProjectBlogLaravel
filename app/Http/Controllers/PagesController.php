@@ -24,7 +24,7 @@ class PagesController extends Controller
 
     public function show(BlogPost $blogPost)
     {
-        
+       
     }
 
     
