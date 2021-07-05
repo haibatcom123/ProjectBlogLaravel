@@ -20,7 +20,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        $post = Post::paginate(2);
+        $post = Post::paginate(3);
         //return view('blog.index') -> with('posts', Post::orderBy('updated_at','DESC')->get());
         return view('blog.index',['posts'=>$post]);
     }
