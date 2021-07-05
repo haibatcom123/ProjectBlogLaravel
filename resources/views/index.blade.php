@@ -18,7 +18,8 @@
             <div class = "m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class ="sm text-yellow-100 text-5xl uppercase font-bold
                 text-shadow-md pb-14">
-                {{__('language.tittle')}}
+                Do you want to discovery the world?
+                {{__('language.title')}}
                 </h1>
                 <!-- <a href="/blog"
                 class="text-center bg-gray-50 text-gray-700 py-2 py-4

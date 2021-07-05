@@ -119,7 +119,7 @@ nav {
 .en:before {
     background-image: url(https://www.countryflags.io/us/flat/32.png);
 }
-.vn:before {
+.vi:before {
     background-image: url(https://www.countryflags.io/vn/flat/32.png);
 }
 
@@ -158,7 +158,7 @@ nav {
                         <a href="language/en" class="en">English</a>
                     </li>
                     <li>
-                        <a href="language/vn" class="vn">Tiếng Việt</a>
+                        <a href="language/vi" class="vi">Tiếng Việt</a>
                     </li>
                     <li>
                         <a href="language/jp" class="jp">Japanese</a>

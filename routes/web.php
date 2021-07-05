@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
+use App\Http\Controllers\LanguageController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,4 +26,14 @@ Route::get('/blog', [PostsController::class, 'index'])->name('posts');
 Auth::routes();
 
 Route::get('/home', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('language/{locale}', 'LanguageController@index') -> name('language');
+
+// Route::get('/language/{language}', function ($lang) {
+//     App::setLocale($lang);
+//     return view('/index');
+// });
+Route::get('/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('/index');
+});
+Route::get('language/{language}',  [\App\Http\Controllers\LanguageController::class, 'index']) -> name('language');
+
