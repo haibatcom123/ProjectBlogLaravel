@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostsController;
-use Illuminate\Support\Facades\App;
+
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LanguageController;
 

@@ -19,6 +19,7 @@
                 <h1 class ="sm text-yellow-100 text-5xl uppercase font-bold
                 text-shadow-md pb-14">
                 {{__('language.title1')}}
+
                 </h1>
                 <!-- <a href="/blog"
                 class="text-center bg-gray-50 text-gray-700 py-2 py-4
@@ -91,6 +92,7 @@
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class ="uppercase text-xs">
                     PHP
+
                 </span>
                 <h3 class="text-xl font-bold py-10">
                 I can tell you about my story. That the way I can enjoy my dream. And the adventure of
