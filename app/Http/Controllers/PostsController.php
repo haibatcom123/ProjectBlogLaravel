@@ -52,7 +52,7 @@ class PostsController extends Controller
         $newImageName = uniqid(). '-' . $request->title . '.' . $request->image->extension();
 
         $request->image->move(public_path('images'),$newImageName);
-        
+
 
         Post::create([
             'title' => $request->input('title'),
@@ -76,7 +76,7 @@ class PostsController extends Controller
     public function show($slug)
     {
         return view('blog.show')->with('posts',Post::where('slug',$slug)->first());
-        
+
     }
 
     /**

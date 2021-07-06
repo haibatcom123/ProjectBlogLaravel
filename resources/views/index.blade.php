@@ -18,8 +18,7 @@
             <div class = "m-auto pt-4 pb-16 sm:m-auto w-4/5 block text-center">
                 <h1 class ="sm text-yellow-100 text-5xl uppercase font-bold
                 text-shadow-md pb-14">
-                Do you want to discovery the world?
-                {{__('language.title')}}
+                {{__('language.title1')}}
                 </h1>
                 <!-- <a href="/blog"
                 class="text-center bg-gray-50 text-gray-700 py-2 py-4
@@ -27,12 +26,12 @@
                 </a> -->
                 <a href="/blog" class="uppercase bg-transparent border-2 border-gray-100 text-gray-100
                 text-xs font-extrabold py-3 px-5 rounded-3xl">
-                Read more</a>
+                {{__('language.readmore')}}</a>
             </div>
         </div>
     </div>
 
- 
+
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
             <img src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" wide="700" alt="">
@@ -42,15 +41,15 @@
             Can you belive that you can creat your own life in your dream?
         </h2>
         <p class = "py-8 text-gray-500 text-s">
-            Dear all, I have a change to creat a beautiful world that no more 
-            war, no more disaster and disease, where people can live happily together forever 
+            Dear all, I have a change to creat a beautiful world that no more
+            war, no more disaster and disease, where people can live happily together forever
         </p>
         <p class = "font-extrabold text-gray-600 text-s pb-9">
-            I can tell you about my story. That the way I can enjoy my dream. And the adventure of 
+            I can tell you about my story. That the way I can enjoy my dream. And the adventure of
             myself to make a perfect world. It seem to be no real but it is a dream, you can imagine
             all the thing you can, it belong to your creation ...
         </p>
-        <a href="/blog" class="uppercase bg-blue-500 text-gray-100 
+        <a href="/blog" class="uppercase bg-blue-500 text-gray-100
         text-s font-extrabold py-3 px-8 rounded-3xl"> Find out more</a>
         </div>
     </div>
@@ -81,9 +80,9 @@
         Recent Posts
         </h2>
         <p class="m-auto w-4/5 text-gray-500">
-            Dear all, I have a change to creat a beautiful world that no more 
-             war, no more disaster and disease, where people can live happily together forever 
-            
+            Dear all, I have a change to creat a beautiful world that no more
+             war, no more disaster and disease, where people can live happily together forever
+
         </p>
     </div>
 
@@ -94,14 +93,14 @@
                     PHP
                 </span>
                 <h3 class="text-xl font-bold py-10">
-                I can tell you about my story. That the way I can enjoy my dream. And the adventure of 
+                I can tell you about my story. That the way I can enjoy my dream. And the adventure of
                 myself to make a perfect world. It seem to be no real but it is a dream, you can imagine
-                all the thing you can, it belong to your creation ... 
+                all the thing you can, it belong to your creation ...
                 </h3>
                 <a href="" class="uppercase bg-transparent border-2 border-gray-100 text-gray-100
                 text-xs font-extrabold py-3 px-5 rounded-3xl">
                 Find Out More</a>
-            </div>          
+            </div>
         </div>
         <div>
             <img src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" wide="700" alt="">
@@ -109,7 +108,7 @@
     </div>
 </body>
 
-    
+
 
 @endsection
 
