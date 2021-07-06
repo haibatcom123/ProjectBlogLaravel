@@ -10,6 +10,10 @@
     background-size: cover;
     height: 500px;
 }
+.picture{
+    width: max-content;
+    height: 300px;
+}
 </style>
 </head>
 <body>
@@ -35,7 +39,7 @@
 
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
         <div>
-            <img src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" wide="700" alt="">
+            <img class="picture" src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" wide="700" alt="">
         </div>
         <div class="m-auto sm:m-auto text-left w-4/5 block ">
         <h2 class ="text-3xl font-extrabold text-gray-600">
@@ -74,9 +78,6 @@
     </div>
 
     <div class="text-center py-15">
-        <span class="upercase text-s text-gray-400">
-        Blog
-        </span>
         <h2 class="text-4xl font-bold py-10">
         Recent Posts
         </h2>
@@ -92,11 +93,10 @@
             <div class="m-auto pt-4 pb-16 sm:m-auto w-4/5 block">
                 <span class ="uppercase text-xs">
                     PHP
-
                 </span>
-                <h3 class="text-xl font-bold py-10">
+                <h3 class="text-xl font-bold py-9">
                 I can tell you about my story. That the way I can enjoy my dream. And the adventure of
-                myself to make a perfect world. It seem to be no real but it is a dream, you can imagine
+                myself to make a perfect world. In your dream you can imagine
                 all the thing you can, it belong to your creation ...
                 </h3>
                 <a href="" class="uppercase bg-transparent border-2 border-gray-100 text-gray-100
@@ -105,7 +105,7 @@
             </div>
         </div>
         <div>
-            <img src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" wide="700" alt="">
+            <img class="picture" src="https://i.pinimg.com/564x/98/f5/a2/98f5a2aa6c644a77d007f9f1ceae64a5.jpg" alt="">
         </div>
     </div>
 </body>

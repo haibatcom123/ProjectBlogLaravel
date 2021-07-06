@@ -33,7 +33,7 @@ class PostsController extends Controller
     public function create()
     {
         return view('blog.create');
-    }`
+    }
 
     /**
      * Store a newly created resource in storage.
